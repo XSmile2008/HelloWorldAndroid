@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.XSmile2008.helloworldandroid.app.activity.MainActivity">
+      <item android:id="@+id/action_exit"
+            android:title="@string/menu_main_activity_exit"
+            android:orderInCategory="101"
+            android:showAsAction="always"/>
+
+      <item android:id="@+id/action_log"
+            android:title="@string/menu_main_activity_log"
+            android:orderInCategory="100"
+            android:showAsAction="always"/>
+
+</menu>

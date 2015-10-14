@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.XSmile2008.helloworldandroid.app" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.LanguageActivity" />
+        <activity
+            android:name=".activity.LogsActivity"
+            android:label="@string/title_activity_logs" >
+        </activity>
+        <activity
+            android:name=".activity.IntentFilterActivity"
+            android:label="@string/title_activity_intent_filter" >
+        </activity>
+        <activity
+            android:name=".activity.ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        <activity
+            android:name=".activity.FragmentsActivity"
+            android:label="@string/title_activity_fragments" >
+        </activity>
+        <activity
+            android:name=".activity.AsyncTaskActivity"
+            android:label="@string/title_activity_async_task" >
+        </activity>
+        <activity
+            android:name=".service.PendingIntentVer.ServicesActivity"
+            android:label="@string/title_activity_services" >
+        </activity>
+        <activity
+            android:name=".service.BroadcastReceiverVer.ServicesActivity"
+            android:label="@string/title_activity_services" >
+        </activity>
+
+        <activity
+                android:name=".service.Binding.ServicesActivity"
+                android:label="@string/title_activity_services" >
+        </activity>
+
+        <activity
+                android:name=".service.Notifications.ServicesActivity"
+                android:label=
+
+                    "@string/title_activity_services" >
+        </activity>
+
+        <service
+            android:name=".service.PendingIntentVer.MyService"
+            android:process=":punyanPendingIntent" >
+            <intent-filter>
+                <action android:name="com.XSmile2008.helloworldandroid.app.service.PendingIntentVer.MyService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.BroadcastReceiverVer.MyService"
+            android:process=":punyanBroadcast" >
+            <intent-filter>
+                <action android:name="com.XSmile2008.helloworldandroid.app.service.BroadcastReceiverVer.MyService" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name=".service.Binding.MyService">
+            <intent-filter>
+                <action android:name="com.XSmile2008.helloworldandroid.app.service.Binding.MyService" />
+            </intent-filter>
+        </service>
+
+        <service
+                android:name=".service.Notifications.MyService">
+            <intent-filter>
+                <action android:name="com.XSmile2008.helloworldandroid.app.service.Notifications.MyService" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".activity.ServicesMainActivity"
+            android:label="@string/title_activity_services_main" >
+        </activity>
+    </application>
+
+</manifest>

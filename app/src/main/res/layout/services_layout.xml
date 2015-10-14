@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.XSmile2008.helloworldandroid.app.service.PendingIntentVer.ServicesActivity">
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStartService"
+            android:onClick="onButtonStartService"
+            android:text="@string/buttonStartServiceText"/>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStopService"
+            android:onClick="onButtonStopService"
+            android:text="@string/buttonStopServiceText"
+            android:layout_below="@+id/buttonStartService"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textViewTask1Status"
+            android:id="@+id/textViewTask1Status"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_below="@+id/buttonStopService"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textViewTask2Status"
+            android:id="@+id/textViewTask2Status"
+            android:layout_below="@+id/textViewTask1Status"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/textViewTask3Status"
+            android:id="@+id/textViewTask3Status"
+            android:layout_below="@+id/textViewTask2Status"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

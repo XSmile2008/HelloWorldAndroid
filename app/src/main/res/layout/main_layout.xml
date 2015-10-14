@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:weightSum="1" tools:context=".activity.MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world_text"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal" android:textSize="32sp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_text"
+                android:id="@+id/buttonImplicitCall"
+                android:onClick="onButtonClick"
+                android:layout_weight="1"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button2" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:id="@+id/buttonDec"
+                    android:background="#ffff0008"
+                    android:onClick="onButtonDecClick"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:text="0"
+                    android:textStyle="bold" android:singleLine="true"
+                    android:nestedScrollingEnabled="true" android:clickable="false" android:elegantTextHeight="false"
+                    android:textSize="36sp" android:layout_weight="1" android:inputType="number"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:id="@+id/buttonInc"
+                    android:background="#f71aa51b"
+                    android:onClick="onButtonIncClick"/>
+        </LinearLayout>
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:rowCount="2"
+                android:columnCount="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/loginFieldName"
+                android:id="@+id/textViewLogin"
+                android:layout_column="0"
+                android:layout_row="0"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextLogin"
+                android:layout_column="1"
+                android:inputType="text"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/passwordFieldName"
+                    android:id="@+id/textViewPassword"
+                    android:layout_column="0"
+                    android:layout_row="1"/>
+            <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:id="@+id/editTextPassword"
+                        android:layout_column="1"/>
+        </GridLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loginButtonText"
+                android:id="@+id/buttonLogin" android:onClick="onButtonLoginClick" android:layout_weight="1"
+                />
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonSetLanguageText"
+                android:id="@+id/buttonSetLanguage"
+                android:onClick="onButtonSetLanguageClick" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logs"
+                android:id="@+id/buttonLogs"
+                android:onClick="onButtonLogsClick" android:layout_weight="1"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IntentFilter"
+                android:id="@+id/buttonIntentFilter" android:onClick="onButtonIntentFilterClick"
+                android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonListViewText"
+                android:id="@+id/buttonListView"
+                android:onClick="onButtonListViewClick" android:layout_weight="1"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonFragmentsText"
+                android:id="@+id/buttonFragments" android:layout_weight="1"
+                android:onClick="onButtonFragmentslick"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonAsyncTaskText"
+                android:id="@+id/buttonAsyncTask"
+                android:onClick="onButtonAsyncTaskClick" android:layout_weight="1"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonServicesText"
+                android:id="@+id/buttonServices" android:layout_weight="1" android:onClick="onButtonServicesClick"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button3" />
+
+</LinearLayout>

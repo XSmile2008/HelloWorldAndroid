@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorldAndroid</string>
+    <string name="hello_world_text">HelloWorld</string>
+    <string name="button_text">Click Me</string>
+    <string name="button2_text">Not Click Me</string>
+    <string name="loginFieldName">Login:</string>
+    <string name="passwordFieldName">Password:</string>
+    <string name="loginButtonText">Login</string>
+    <string name="loginCongratulationText">Congratulation!</string>
+    <string name="loginYour">Your login is:</string>
+    <string name="passwordYour">Your password is:</string>
+    <string name="buttonBackText">Back</string>
+    <string name="buttonSetLanguageText">SetLanguage</string>
+    <string name="buttonRememberMeText">Remember Me</string>
+    <string name="title_activity_logs">LogsActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_intent_filter">IntentFilterActivity</string>
+    <string name="buttonExplicitCallText">Explicit Call</string>
+    <string name="buttonImplicitCallText">ImplicitCall</string>
+    <string name="buttonOpenContactsText">Open Contacts</string>
+    <string name="title_activity_mai">MaiActivity</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+    <string name="menu_main_activity_exit">Exit</string>
+    <string name="menu_main_activity_log">log</string>
+    <string name="title_activity_fragments">FragmentsActivity</string>
+    <string name="buttonFragmentsText">Fragments</string>
+    <string name="buttonListViewText">List View</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buttonSayHelloWorldText">Say \'Hello World\'</string>
+    <string name="title_activity_async_task">AsyncTaskActivity</string>
+    <string name="buttonAsyncTaskText">AsyncTask</string>
+    <string name="buttonStartAsyncTaskText">Start</string>
+    <string name="buttonStopAsyncTaskText">Stop</string>
+    <string name="buttonStatusAsyncTaskText">Status</string>
+    <string name="title_activity_services">ServicesActivity</string>
+    <string name="buttonServicesText">Services</string>
+    <string name="buttonStartServiceText">Start</string>
+    <string name="buttonStopServiceText">Stop</string>
+    <string name="textViewTask1Status">Task1</string>
+    <string name="textViewTask2Status">Task2</string>
+    <string name="textViewTask3Status">Task3</string>
+    <string name="buttonBindServiceText">Bind</string>
+    <string name="buttonUnbindServiceText">Unbind</string>
+    <string name="title_activity_services_main">ServicesMainActivity</string>
+    <string name="buttonServicesBindingText">Binding</string>
+    <string name="buttonServicesPendingIntentText">PendingIntent</string>
+    <string name="buttonServicesBroadcastReceiverText">BroadcastReceiver</string>
+    <string name="buttonServicesNotificationsText">Notifications</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1" tools:context=".LanguageActivity">
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:id="@+id/buttonEnglish" android:layout_gravity="center_horizontal"
+            android:onClick="onLanguageButtonClick"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ukraine"
+            android:id="@+id/buttonUkraine" android:layout_gravity="center_horizontal"
+            android:onClick="onLanguageButtonClick"/>
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Russian"
+            android:id="@+id/buttonRussian" android:layout_gravity="center_horizontal"
+            android:onClick="onLanguageButtonClick"/>
+</LinearLayout>
